@@ -1,0 +1,16 @@
+/* Definición del estilo / Calculator style definition */
+#Calc{
+    height: 450px;
+    width: 300px;
+    background-color: grey;
+    border-radius: 5px;
+}
+#Calc form{
+    height: 100%;
+    width: 100%;
+    background-color: lightgrey;
+}
+
+#Calc input[type=textfield]{
+width: 100%;
+}
