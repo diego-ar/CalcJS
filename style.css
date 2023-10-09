@@ -1,16 +1,67 @@
-/* Definición del estilo / Calculator style definition */
-#Calc{
-    height: 450px;
-    width: 300px;
-    background-color: grey;
-    border-radius: 5px;
-}
-#Calc form{
-    height: 100%;
-    width: 100%;
-    background-color: lightgrey;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
 }
 
-#Calc input[type=textfield]{
-width: 100%;
+body {
+    min-height: 100vh;
+    background-color: #30343f;
+    display: grid;
+    place-items: center;
+}
+
+.calculadora {
+    background-color: #1e2749;
+    color: white;
+    width: 350px;
+    max-width: 100%;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: .5rem;
+}
+
+.pantalla {
+    grid-column: 1 / -1;
+    background-color: darkgray;
+    padding: 1.5rem;
+    font-size: 2rem;
+    text-align: right;
+    border-radius: .5rem;
+    margin-bottom: 1rem;
+    font-family: monospace;
+    font-weight: 600;
+}
+
+.btn {
+    background-color: #e4d9ff;
+    color: #30343f;
+    border: 0;
+    padding: 1.5rem .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: .5rem;
+    cursor: pointer;
+    font-weight: 800;
+}
+
+.btn:hover {
+    background-color: #726da8;
+}
+
+#cero {
+    grid-column: span 2;
+}
+
+#igual {
+    grid-row: span 2;
+    background-color: #fafaff;
+}
+
+#igual:hover {
+    background-color: #ffefd3;
 }
