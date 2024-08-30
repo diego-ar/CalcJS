@@ -7,13 +7,15 @@
 
 body {
     min-height: 100vh;
-    background-color: #30343f;
+    background: rgb(2,21,61);
+    background: linear-gradient(130deg, rgba(2,21,61,1) 0%, rgba(75,34,122,1) 76%);
     display: grid;
     place-items: center;
+    
 }
 
 .calculadora {
-    background-color: #C7DFC5;
+    background-color: white;
     color: white;
     width: 350px;
     max-width: 100%;
@@ -22,6 +24,13 @@ body {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: .5rem;
+    
+    background: rgba( 240, 230, 230, 0.35 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 3px );
+    -webkit-backdrop-filter: blur( 3px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
 .pantalla {
@@ -34,11 +43,16 @@ body {
     margin-bottom: 1rem;
     font-family: monospace;
     font-weight: 600;
+    background: rgba( 71, 66, 66, 0.15 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 20px );
+    -webkit-backdrop-filter: blur( 20px );
+    border-radius: 10px;
+    order: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
 .btn {
-    background-color: #C7DFC5;
-    color: #30343f;
+    color: #000;
     border: 0;
     padding: 1.5rem .5rem;
     display: flex;
@@ -46,11 +60,18 @@ body {
     align-items: center;
     border-radius: .5rem;
     cursor: pointer;
-    font-weight: 800;
+    font-weight: 700;
+    font-family: Helvetica;
+    background: rgba( 71, 66, 66, 0.15 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 20px );
+    -webkit-backdrop-filter: blur( 20px );
+    border-radius: 100px;
+    order: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
 .btn:hover {
-    background-color: #67A861;
+    background-color: #a6e1fa;
 }
 
 #cero {
@@ -59,9 +80,14 @@ body {
 
 #igual {
     grid-row: span 2;
-    background-color: #C7DFC5;
+    background-color: #a6e1fa;
 }
 
 #igual:hover {
-    background-color: #67A861;
+    background-color: #2ebdec;
+}
+
+footer{
+    color:#a6e1fa;
+    font-size: small;
 }
