@@ -7,8 +7,8 @@
 
 body {
     min-height: 100vh;
-    background: rgb(2,21,61);
-    background: linear-gradient(130deg, rgba(2,21,61,1) 0%, rgba(75,34,122,1) 76%);
+    background: rgb(8,60,113);
+    background: linear-gradient(167deg, rgba(8,60,113,1) 6%, rgba(37,73,161,1) 46%, rgba(24,179,191,1) 97%);
     display: grid;
     place-items: center;
     
@@ -25,10 +25,10 @@ body {
     grid-template-columns: repeat(4, 1fr);
     gap: .5rem;
     
-    background: rgba( 240, 230, 230, 0.35 );
+    background: rgba( 255, 255, 255, 0.1 );
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 3px );
-    -webkit-backdrop-filter: blur( 3px );
+    backdrop-filter: blur( 5.5px );
+    -webkit-backdrop-filter: blur( 4.5px );
     border-radius: 10px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
@@ -80,14 +80,15 @@ body {
 
 #igual {
     grid-row: span 2;
-    background-color: #a6e1fa;
+    background-color: #82daff;
 }
 
 #igual:hover {
-    background-color: #2ebdec;
+    background-color: #3a0ca3;
 }
 
 footer{
-    color:#a6e1fa;
+    color:#000102;
     font-size: small;
+    font-family: monospace;
 }
